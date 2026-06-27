@@ -66,6 +66,7 @@ Interpretation:
 ## Limitations
 
 - The current sample dataset is intentionally small.
+- The sample transcript data is derived from `glopardo/sp500-earnings-transcripts` on Hugging Face and remains subject to upstream dataset/source terms.
 - Embeddings still depend on Voyage API.
 - Comparison evaluation has only two curated cases.
 - `errors=0%` means the runtime did not crash; it does not prove every answer is semantically perfect.
@@ -81,4 +82,3 @@ Interpretation:
 ## Final Status
 
 The project is complete as a portfolio-grade Agentic RAG prototype with documented setup, demo commands, curated benchmarks, and final RTX 5080 profiling results.
-

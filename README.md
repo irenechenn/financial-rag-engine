@@ -76,11 +76,13 @@ Claude is optional when using `--llm-provider ollama`. Voyage is still required 
 
 ## Data And Index
 
-The repo includes a small sample dataset:
+The repo includes a small sample dataset derived from the Hugging Face dataset `glopardo/sp500-earnings-transcripts`:
 
 ```text
 data/mini_sp500_transcripts.json
 ```
+
+See `docs/DATA.md` for source attribution, citation guidance, and data-use notes.
 
 Build the local FAISS index after cloning:
 
