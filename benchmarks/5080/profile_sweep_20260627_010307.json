@@ -1,0 +1,446 @@
+{
+  "summary": {
+    "run_count": 5,
+    "concurrency_values": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "runs": [
+      {
+        "concurrency": 1,
+        "case_count": 2,
+        "total_latency_seconds": 8.41287779994309,
+        "throughput_cases_per_second": 0.23773077983059845,
+        "latency_seconds": {
+          "average": 4.206272800103761,
+          "p50": 4.206272800103761,
+          "p95": 4.312931890052277,
+          "p99": 4.322412698047701,
+          "max": 4.324782900046557
+        },
+        "average_agent_loops": 3.0,
+        "average_correction_attempts": 0.0,
+        "guardrail_pass_rate": 1.0,
+        "error_rate": 0.0
+      },
+      {
+        "concurrency": 2,
+        "case_count": 2,
+        "total_latency_seconds": 5.598433100152761,
+        "throughput_cases_per_second": 0.35724281494860183,
+        "latency_seconds": {
+          "average": 5.101180649828166,
+          "p50": 5.101180649828166,
+          "p95": 5.548546664835885,
+          "p99": 5.5883125328365715,
+          "max": 5.598253999836743
+        },
+        "average_agent_loops": 3.0,
+        "average_correction_attempts": 0.0,
+        "guardrail_pass_rate": 1.0,
+        "error_rate": 0.0
+      },
+      {
+        "concurrency": 4,
+        "case_count": 2,
+        "total_latency_seconds": 5.449451599968597,
+        "throughput_cases_per_second": 0.3670094069670286,
+        "latency_seconds": {
+          "average": 4.962530949967913,
+          "p50": 4.962530949967913,
+          "p95": 5.39251832497539,
+          "p99": 5.430739424976054,
+          "max": 5.440294699976221
+        },
+        "average_agent_loops": 3.0,
+        "average_correction_attempts": 0.0,
+        "guardrail_pass_rate": 1.0,
+        "error_rate": 0.0
+      },
+      {
+        "concurrency": 8,
+        "case_count": 2,
+        "total_latency_seconds": 5.815529700135812,
+        "throughput_cases_per_second": 0.3439067639794348,
+        "latency_seconds": {
+          "average": 5.196811800007708,
+          "p50": 5.196811800007708,
+          "p95": 5.745081809989642,
+          "p99": 5.793816921988037,
+          "max": 5.806000699987635
+        },
+        "average_agent_loops": 3.0,
+        "average_correction_attempts": 0.0,
+        "guardrail_pass_rate": 1.0,
+        "error_rate": 0.0
+      },
+      {
+        "concurrency": 16,
+        "case_count": 2,
+        "total_latency_seconds": 5.680264699971303,
+        "throughput_cases_per_second": 0.3520962676281801,
+        "latency_seconds": {
+          "average": 5.1337043000385165,
+          "p50": 5.1337043000385165,
+          "p95": 5.617483280133456,
+          "p99": 5.660485856141896,
+          "max": 5.671236500144005
+        },
+        "average_agent_loops": 3.0,
+        "average_correction_attempts": 0.0,
+        "guardrail_pass_rate": 1.0,
+        "error_rate": 0.0
+      }
+    ]
+  },
+  "runs": [
+    {
+      "summary": {
+        "concurrency": 1,
+        "case_count": 2,
+        "total_latency_seconds": 8.41287779994309,
+        "throughput_cases_per_second": 0.23773077983059845,
+        "latency_seconds": {
+          "average": 4.206272800103761,
+          "p50": 4.206272800103761,
+          "p95": 4.312931890052277,
+          "p99": 4.322412698047701,
+          "max": 4.324782900046557
+        },
+        "average_agent_loops": 3.0,
+        "average_correction_attempts": 0.0,
+        "guardrail_pass_rate": 1.0,
+        "error_rate": 0.0
+      },
+      "cases": [
+        {
+          "case_id": "msft_cloud_vs_amzn_aws_2023",
+          "category": "comparison",
+          "question": "Compare Microsoft cloud commentary with Amazon AWS commentary in 2023. Use retrieved evidence from both companies.",
+          "latency_seconds": 4.324782900046557,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        },
+        {
+          "case_id": "googl_ads_vs_meta_ads_2024",
+          "category": "comparison",
+          "question": "Compare Alphabet advertising commentary with Meta advertising commentary in 2024. Use retrieved evidence from both companies.",
+          "latency_seconds": 4.087762700160965,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        }
+      ],
+      "gpu_memory_snapshots": [
+        {
+          "label": "before",
+          "gpus": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 5080",
+              "memory_used_mb": 5948.0,
+              "memory_total_mb": 16303.0,
+              "utilization_gpu_pct": 0.0
+            }
+          ],
+          "error": null
+        },
+        {
+          "label": "after",
+          "gpus": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 5080",
+              "memory_used_mb": 5948.0,
+              "memory_total_mb": 16303.0,
+              "utilization_gpu_pct": 92.0
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "summary": {
+        "concurrency": 2,
+        "case_count": 2,
+        "total_latency_seconds": 5.598433100152761,
+        "throughput_cases_per_second": 0.35724281494860183,
+        "latency_seconds": {
+          "average": 5.101180649828166,
+          "p50": 5.101180649828166,
+          "p95": 5.548546664835885,
+          "p99": 5.5883125328365715,
+          "max": 5.598253999836743
+        },
+        "average_agent_loops": 3.0,
+        "average_correction_attempts": 0.0,
+        "guardrail_pass_rate": 1.0,
+        "error_rate": 0.0
+      },
+      "cases": [
+        {
+          "case_id": "msft_cloud_vs_amzn_aws_2023",
+          "category": "comparison",
+          "question": "Compare Microsoft cloud commentary with Amazon AWS commentary in 2023. Use retrieved evidence from both companies.",
+          "latency_seconds": 5.598253999836743,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        },
+        {
+          "case_id": "googl_ads_vs_meta_ads_2024",
+          "category": "comparison",
+          "question": "Compare Alphabet advertising commentary with Meta advertising commentary in 2024. Use retrieved evidence from both companies.",
+          "latency_seconds": 4.604107299819589,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        }
+      ],
+      "gpu_memory_snapshots": [
+        {
+          "label": "before",
+          "gpus": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 5080",
+              "memory_used_mb": 5948.0,
+              "memory_total_mb": 16303.0,
+              "utilization_gpu_pct": 92.0
+            }
+          ],
+          "error": null
+        },
+        {
+          "label": "after",
+          "gpus": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 5080",
+              "memory_used_mb": 5948.0,
+              "memory_total_mb": 16303.0,
+              "utilization_gpu_pct": 0.0
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "summary": {
+        "concurrency": 4,
+        "case_count": 2,
+        "total_latency_seconds": 5.449451599968597,
+        "throughput_cases_per_second": 0.3670094069670286,
+        "latency_seconds": {
+          "average": 4.962530949967913,
+          "p50": 4.962530949967913,
+          "p95": 5.39251832497539,
+          "p99": 5.430739424976054,
+          "max": 5.440294699976221
+        },
+        "average_agent_loops": 3.0,
+        "average_correction_attempts": 0.0,
+        "guardrail_pass_rate": 1.0,
+        "error_rate": 0.0
+      },
+      "cases": [
+        {
+          "case_id": "msft_cloud_vs_amzn_aws_2023",
+          "category": "comparison",
+          "question": "Compare Microsoft cloud commentary with Amazon AWS commentary in 2023. Use retrieved evidence from both companies.",
+          "latency_seconds": 4.484767199959606,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        },
+        {
+          "case_id": "googl_ads_vs_meta_ads_2024",
+          "category": "comparison",
+          "question": "Compare Alphabet advertising commentary with Meta advertising commentary in 2024. Use retrieved evidence from both companies.",
+          "latency_seconds": 5.440294699976221,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        }
+      ],
+      "gpu_memory_snapshots": [
+        {
+          "label": "before",
+          "gpus": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 5080",
+              "memory_used_mb": 5948.0,
+              "memory_total_mb": 16303.0,
+              "utilization_gpu_pct": 0.0
+            }
+          ],
+          "error": null
+        },
+        {
+          "label": "after",
+          "gpus": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 5080",
+              "memory_used_mb": 5948.0,
+              "memory_total_mb": 16303.0,
+              "utilization_gpu_pct": 0.0
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "summary": {
+        "concurrency": 8,
+        "case_count": 2,
+        "total_latency_seconds": 5.815529700135812,
+        "throughput_cases_per_second": 0.3439067639794348,
+        "latency_seconds": {
+          "average": 5.196811800007708,
+          "p50": 5.196811800007708,
+          "p95": 5.745081809989642,
+          "p99": 5.793816921988037,
+          "max": 5.806000699987635
+        },
+        "average_agent_loops": 3.0,
+        "average_correction_attempts": 0.0,
+        "guardrail_pass_rate": 1.0,
+        "error_rate": 0.0
+      },
+      "cases": [
+        {
+          "case_id": "msft_cloud_vs_amzn_aws_2023",
+          "category": "comparison",
+          "question": "Compare Microsoft cloud commentary with Amazon AWS commentary in 2023. Use retrieved evidence from both companies.",
+          "latency_seconds": 4.587622900027782,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        },
+        {
+          "case_id": "googl_ads_vs_meta_ads_2024",
+          "category": "comparison",
+          "question": "Compare Alphabet advertising commentary with Meta advertising commentary in 2024. Use retrieved evidence from both companies.",
+          "latency_seconds": 5.806000699987635,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        }
+      ],
+      "gpu_memory_snapshots": [
+        {
+          "label": "before",
+          "gpus": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 5080",
+              "memory_used_mb": 5948.0,
+              "memory_total_mb": 16303.0,
+              "utilization_gpu_pct": 0.0
+            }
+          ],
+          "error": null
+        },
+        {
+          "label": "after",
+          "gpus": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 5080",
+              "memory_used_mb": 5948.0,
+              "memory_total_mb": 16303.0,
+              "utilization_gpu_pct": 92.0
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "summary": {
+        "concurrency": 16,
+        "case_count": 2,
+        "total_latency_seconds": 5.680264699971303,
+        "throughput_cases_per_second": 0.3520962676281801,
+        "latency_seconds": {
+          "average": 5.1337043000385165,
+          "p50": 5.1337043000385165,
+          "p95": 5.617483280133456,
+          "p99": 5.660485856141896,
+          "max": 5.671236500144005
+        },
+        "average_agent_loops": 3.0,
+        "average_correction_attempts": 0.0,
+        "guardrail_pass_rate": 1.0,
+        "error_rate": 0.0
+      },
+      "cases": [
+        {
+          "case_id": "msft_cloud_vs_amzn_aws_2023",
+          "category": "comparison",
+          "question": "Compare Microsoft cloud commentary with Amazon AWS commentary in 2023. Use retrieved evidence from both companies.",
+          "latency_seconds": 4.596172099933028,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        },
+        {
+          "case_id": "googl_ads_vs_meta_ads_2024",
+          "category": "comparison",
+          "question": "Compare Alphabet advertising commentary with Meta advertising commentary in 2024. Use retrieved evidence from both companies.",
+          "latency_seconds": 5.671236500144005,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        }
+      ],
+      "gpu_memory_snapshots": [
+        {
+          "label": "before",
+          "gpus": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 5080",
+              "memory_used_mb": 5948.0,
+              "memory_total_mb": 16303.0,
+              "utilization_gpu_pct": 92.0
+            }
+          ],
+          "error": null
+        },
+        {
+          "label": "after",
+          "gpus": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 5080",
+              "memory_used_mb": 5948.0,
+              "memory_total_mb": 16303.0,
+              "utilization_gpu_pct": 93.0
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  ]
+}

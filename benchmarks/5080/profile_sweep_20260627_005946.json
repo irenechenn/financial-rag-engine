@@ -1,0 +1,646 @@
+{
+  "summary": {
+    "run_count": 5,
+    "concurrency_values": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "runs": [
+      {
+        "concurrency": 1,
+        "case_count": 6,
+        "total_latency_seconds": 26.89333810005337,
+        "throughput_cases_per_second": 0.2231035796924032,
+        "latency_seconds": {
+          "average": 4.482120883301832,
+          "p50": 4.543606699910015,
+          "p95": 4.595415700052399,
+          "p99": 4.59672194008017,
+          "max": 4.597048500087112
+        },
+        "average_agent_loops": 3.0,
+        "average_correction_attempts": 0.0,
+        "guardrail_pass_rate": 1.0,
+        "error_rate": 0.0
+      },
+      {
+        "concurrency": 2,
+        "case_count": 6,
+        "total_latency_seconds": 17.003184200031683,
+        "throughput_cases_per_second": 0.35287508089154385,
+        "latency_seconds": {
+          "average": 5.510584933372836,
+          "p50": 5.479934650007635,
+          "p95": 6.107899049995467,
+          "p99": 6.173497169977054,
+          "max": 6.189896699972451
+        },
+        "average_agent_loops": 3.0,
+        "average_correction_attempts": 0.0,
+        "guardrail_pass_rate": 1.0,
+        "error_rate": 0.0
+      },
+      {
+        "concurrency": 4,
+        "case_count": 6,
+        "total_latency_seconds": 15.715593199944124,
+        "throughput_cases_per_second": 0.38178641580143047,
+        "latency_seconds": {
+          "average": 8.468024766693512,
+          "p50": 8.101225349935703,
+          "p95": 10.442691975040361,
+          "p99": 10.672505515022204,
+          "max": 10.729958900017664
+        },
+        "average_agent_loops": 3.0,
+        "average_correction_attempts": 0.0,
+        "guardrail_pass_rate": 1.0,
+        "error_rate": 0.0
+      },
+      {
+        "concurrency": 8,
+        "case_count": 6,
+        "total_latency_seconds": 16.08942269999534,
+        "throughput_cases_per_second": 0.3729158038716789,
+        "latency_seconds": {
+          "average": 13.363060949991146,
+          "p50": 13.263005249900743,
+          "p95": 15.808128825039603,
+          "p99": 16.008205925044603,
+          "max": 16.058225200045854
+        },
+        "average_agent_loops": 3.0,
+        "average_correction_attempts": 0.0,
+        "guardrail_pass_rate": 1.0,
+        "error_rate": 0.0
+      },
+      {
+        "concurrency": 16,
+        "case_count": 6,
+        "total_latency_seconds": 16.038860900094733,
+        "throughput_cases_per_second": 0.3740914044565697,
+        "latency_seconds": {
+          "average": 13.319740116673833,
+          "p50": 13.295724299969152,
+          "p95": 15.734974024933763,
+          "p99": 15.956840564892627,
+          "max": 16.012307199882343
+        },
+        "average_agent_loops": 3.0,
+        "average_correction_attempts": 0.0,
+        "guardrail_pass_rate": 1.0,
+        "error_rate": 0.0
+      }
+    ]
+  },
+  "runs": [
+    {
+      "summary": {
+        "concurrency": 1,
+        "case_count": 6,
+        "total_latency_seconds": 26.89333810005337,
+        "throughput_cases_per_second": 0.2231035796924032,
+        "latency_seconds": {
+          "average": 4.482120883301832,
+          "p50": 4.543606699910015,
+          "p95": 4.595415700052399,
+          "p99": 4.59672194008017,
+          "max": 4.597048500087112
+        },
+        "average_agent_loops": 3.0,
+        "average_correction_attempts": 0.0,
+        "guardrail_pass_rate": 1.0,
+        "error_rate": 0.0
+      },
+      "cases": [
+        {
+          "case_id": "aapl_2023_services_revenue",
+          "category": "simple",
+          "question": "Find one Apple 2023 services revenue comment and summarize it using only retrieved evidence.",
+          "latency_seconds": 4.597048500087112,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        },
+        {
+          "case_id": "tsla_2024_margin_comment",
+          "category": "simple",
+          "question": "Find one Tesla 2024 gross margin or profitability comment and summarize the stated reason using only retrieved evidence.",
+          "latency_seconds": 4.509571699891239,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        },
+        {
+          "case_id": "nvda_2024_data_center",
+          "category": "simple",
+          "question": "Find one Nvidia 2024 data center demand comment and summarize it using only retrieved evidence.",
+          "latency_seconds": 4.338267999934033,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        },
+        {
+          "case_id": "msft_2024_cloud",
+          "category": "simple",
+          "question": "Find one Microsoft 2024 cloud or Azure comment and summarize it using only retrieved evidence.",
+          "latency_seconds": 4.59051729994826,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        },
+        {
+          "case_id": "amzn_2023_aws",
+          "category": "simple",
+          "question": "Find one Amazon 2023 AWS comment and summarize it using only retrieved evidence.",
+          "latency_seconds": 4.279678100021556,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        },
+        {
+          "case_id": "meta_2024_advertising",
+          "category": "simple",
+          "question": "Find one Meta 2024 advertising revenue or ad demand comment and summarize it using only retrieved evidence.",
+          "latency_seconds": 4.57764169992879,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        }
+      ],
+      "gpu_memory_snapshots": [
+        {
+          "label": "before",
+          "gpus": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 5080",
+              "memory_used_mb": 5948.0,
+              "memory_total_mb": 16303.0,
+              "utilization_gpu_pct": 0.0
+            }
+          ],
+          "error": null
+        },
+        {
+          "label": "after",
+          "gpus": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 5080",
+              "memory_used_mb": 5948.0,
+              "memory_total_mb": 16303.0,
+              "utilization_gpu_pct": 93.0
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "summary": {
+        "concurrency": 2,
+        "case_count": 6,
+        "total_latency_seconds": 17.003184200031683,
+        "throughput_cases_per_second": 0.35287508089154385,
+        "latency_seconds": {
+          "average": 5.510584933372836,
+          "p50": 5.479934650007635,
+          "p95": 6.107899049995467,
+          "p99": 6.173497169977054,
+          "max": 6.189896699972451
+        },
+        "average_agent_loops": 3.0,
+        "average_correction_attempts": 0.0,
+        "guardrail_pass_rate": 1.0,
+        "error_rate": 0.0
+      },
+      "cases": [
+        {
+          "case_id": "aapl_2023_services_revenue",
+          "category": "simple",
+          "question": "Find one Apple 2023 services revenue comment and summarize it using only retrieved evidence.",
+          "latency_seconds": 6.189896699972451,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        },
+        {
+          "case_id": "tsla_2024_margin_comment",
+          "category": "simple",
+          "question": "Find one Tesla 2024 gross margin or profitability comment and summarize the stated reason using only retrieved evidence.",
+          "latency_seconds": 5.100707700010389,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        },
+        {
+          "case_id": "nvda_2024_data_center",
+          "category": "simple",
+          "question": "Find one Nvidia 2024 data center demand comment and summarize it using only retrieved evidence.",
+          "latency_seconds": 5.725949400104582,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        },
+        {
+          "case_id": "msft_2024_cloud",
+          "category": "simple",
+          "question": "Find one Microsoft 2024 cloud or Azure comment and summarize it using only retrieved evidence.",
+          "latency_seconds": 5.861906100064516,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        },
+        {
+          "case_id": "amzn_2023_aws",
+          "category": "simple",
+          "question": "Find one Amazon 2023 AWS comment and summarize it using only retrieved evidence.",
+          "latency_seconds": 5.233919899910688,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        },
+        {
+          "case_id": "meta_2024_advertising",
+          "category": "simple",
+          "question": "Find one Meta 2024 advertising revenue or ad demand comment and summarize it using only retrieved evidence.",
+          "latency_seconds": 4.951129800174385,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        }
+      ],
+      "gpu_memory_snapshots": [
+        {
+          "label": "before",
+          "gpus": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 5080",
+              "memory_used_mb": 5948.0,
+              "memory_total_mb": 16303.0,
+              "utilization_gpu_pct": 93.0
+            }
+          ],
+          "error": null
+        },
+        {
+          "label": "after",
+          "gpus": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 5080",
+              "memory_used_mb": 5948.0,
+              "memory_total_mb": 16303.0,
+              "utilization_gpu_pct": 0.0
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "summary": {
+        "concurrency": 4,
+        "case_count": 6,
+        "total_latency_seconds": 15.715593199944124,
+        "throughput_cases_per_second": 0.38178641580143047,
+        "latency_seconds": {
+          "average": 8.468024766693512,
+          "p50": 8.101225349935703,
+          "p95": 10.442691975040361,
+          "p99": 10.672505515022204,
+          "max": 10.729958900017664
+        },
+        "average_agent_loops": 3.0,
+        "average_correction_attempts": 0.0,
+        "guardrail_pass_rate": 1.0,
+        "error_rate": 0.0
+      },
+      "cases": [
+        {
+          "case_id": "aapl_2023_services_revenue",
+          "category": "simple",
+          "question": "Find one Apple 2023 services revenue comment and summarize it using only retrieved evidence.",
+          "latency_seconds": 9.580891200108454,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        },
+        {
+          "case_id": "tsla_2024_margin_comment",
+          "category": "simple",
+          "question": "Find one Tesla 2024 gross margin or profitability comment and summarize the stated reason using only retrieved evidence.",
+          "latency_seconds": 10.729958900017664,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        },
+        {
+          "case_id": "nvda_2024_data_center",
+          "category": "simple",
+          "question": "Find one Nvidia 2024 data center demand comment and summarize it using only retrieved evidence.",
+          "latency_seconds": 8.532945199869573,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        },
+        {
+          "case_id": "msft_2024_cloud",
+          "category": "simple",
+          "question": "Find one Microsoft 2024 cloud or Azure comment and summarize it using only retrieved evidence.",
+          "latency_seconds": 7.669505500001833,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        },
+        {
+          "case_id": "amzn_2023_aws",
+          "category": "simple",
+          "question": "Find one Amazon 2023 AWS comment and summarize it using only retrieved evidence.",
+          "latency_seconds": 7.130227700108662,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        },
+        {
+          "case_id": "meta_2024_advertising",
+          "category": "simple",
+          "question": "Find one Meta 2024 advertising revenue or ad demand comment and summarize it using only retrieved evidence.",
+          "latency_seconds": 7.16462010005489,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        }
+      ],
+      "gpu_memory_snapshots": [
+        {
+          "label": "before",
+          "gpus": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 5080",
+              "memory_used_mb": 5948.0,
+              "memory_total_mb": 16303.0,
+              "utilization_gpu_pct": 0.0
+            }
+          ],
+          "error": null
+        },
+        {
+          "label": "after",
+          "gpus": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 5080",
+              "memory_used_mb": 5948.0,
+              "memory_total_mb": 16303.0,
+              "utilization_gpu_pct": 94.0
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "summary": {
+        "concurrency": 8,
+        "case_count": 6,
+        "total_latency_seconds": 16.08942269999534,
+        "throughput_cases_per_second": 0.3729158038716789,
+        "latency_seconds": {
+          "average": 13.363060949991146,
+          "p50": 13.263005249900743,
+          "p95": 15.808128825039603,
+          "p99": 16.008205925044603,
+          "max": 16.058225200045854
+        },
+        "average_agent_loops": 3.0,
+        "average_correction_attempts": 0.0,
+        "guardrail_pass_rate": 1.0,
+        "error_rate": 0.0
+      },
+      "cases": [
+        {
+          "case_id": "aapl_2023_services_revenue",
+          "category": "simple",
+          "question": "Find one Apple 2023 services revenue comment and summarize it using only retrieved evidence.",
+          "latency_seconds": 15.05783970002085,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        },
+        {
+          "case_id": "tsla_2024_margin_comment",
+          "category": "simple",
+          "question": "Find one Tesla 2024 gross margin or profitability comment and summarize the stated reason using only retrieved evidence.",
+          "latency_seconds": 10.887225500075147,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        },
+        {
+          "case_id": "nvda_2024_data_center",
+          "category": "simple",
+          "question": "Find one Nvidia 2024 data center demand comment and summarize it using only retrieved evidence.",
+          "latency_seconds": 16.058225200045854,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        },
+        {
+          "case_id": "msft_2024_cloud",
+          "category": "simple",
+          "question": "Find one Microsoft 2024 cloud or Azure comment and summarize it using only retrieved evidence.",
+          "latency_seconds": 12.678169899852946,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        },
+        {
+          "case_id": "amzn_2023_aws",
+          "category": "simple",
+          "question": "Find one Amazon 2023 AWS comment and summarize it using only retrieved evidence.",
+          "latency_seconds": 11.649064800003543,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        },
+        {
+          "case_id": "meta_2024_advertising",
+          "category": "simple",
+          "question": "Find one Meta 2024 advertising revenue or ad demand comment and summarize it using only retrieved evidence.",
+          "latency_seconds": 13.84784059994854,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        }
+      ],
+      "gpu_memory_snapshots": [
+        {
+          "label": "before",
+          "gpus": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 5080",
+              "memory_used_mb": 5948.0,
+              "memory_total_mb": 16303.0,
+              "utilization_gpu_pct": 94.0
+            }
+          ],
+          "error": null
+        },
+        {
+          "label": "after",
+          "gpus": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 5080",
+              "memory_used_mb": 5948.0,
+              "memory_total_mb": 16303.0,
+              "utilization_gpu_pct": 90.0
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "summary": {
+        "concurrency": 16,
+        "case_count": 6,
+        "total_latency_seconds": 16.038860900094733,
+        "throughput_cases_per_second": 0.3740914044565697,
+        "latency_seconds": {
+          "average": 13.319740116673833,
+          "p50": 13.295724299969152,
+          "p95": 15.734974024933763,
+          "p99": 15.956840564892627,
+          "max": 16.012307199882343
+        },
+        "average_agent_loops": 3.0,
+        "average_correction_attempts": 0.0,
+        "guardrail_pass_rate": 1.0,
+        "error_rate": 0.0
+      },
+      "cases": [
+        {
+          "case_id": "aapl_2023_services_revenue",
+          "category": "simple",
+          "question": "Find one Apple 2023 services revenue comment and summarize it using only retrieved evidence.",
+          "latency_seconds": 10.659675300121307,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        },
+        {
+          "case_id": "tsla_2024_margin_comment",
+          "category": "simple",
+          "question": "Find one Tesla 2024 gross margin or profitability comment and summarize the stated reason using only retrieved evidence.",
+          "latency_seconds": 14.902974500088021,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        },
+        {
+          "case_id": "nvda_2024_data_center",
+          "category": "simple",
+          "question": "Find one Nvidia 2024 data center demand comment and summarize it using only retrieved evidence.",
+          "latency_seconds": 13.743225099984556,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        },
+        {
+          "case_id": "msft_2024_cloud",
+          "category": "simple",
+          "question": "Find one Microsoft 2024 cloud or Azure comment and summarize it using only retrieved evidence.",
+          "latency_seconds": 16.012307199882343,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        },
+        {
+          "case_id": "amzn_2023_aws",
+          "category": "simple",
+          "question": "Find one Amazon 2023 AWS comment and summarize it using only retrieved evidence.",
+          "latency_seconds": 12.848223499953747,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        },
+        {
+          "case_id": "meta_2024_advertising",
+          "category": "simple",
+          "question": "Find one Meta 2024 advertising revenue or ad demand comment and summarize it using only retrieved evidence.",
+          "latency_seconds": 11.752035100013018,
+          "loop_count": 3,
+          "correction_count": 0,
+          "guardrail_passed": true,
+          "error_message": null
+        }
+      ],
+      "gpu_memory_snapshots": [
+        {
+          "label": "before",
+          "gpus": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 5080",
+              "memory_used_mb": 5948.0,
+              "memory_total_mb": 16303.0,
+              "utilization_gpu_pct": 90.0
+            }
+          ],
+          "error": null
+        },
+        {
+          "label": "after",
+          "gpus": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 5080",
+              "memory_used_mb": 5948.0,
+              "memory_total_mb": 16303.0,
+              "utilization_gpu_pct": 7.0
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  ]
+}

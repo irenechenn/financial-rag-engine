@@ -1,0 +1,104 @@
+[
+  {
+    "case_id": "aapl_2023_services_revenue",
+    "category": "simple",
+    "question": "Find one Apple 2023 services revenue comment and summarize it using only retrieved evidence.",
+    "expected_tickers": ["AAPL"],
+    "expected_years": [2023],
+    "expected_tool_calls": [{"tool_name": "search_transcript_tool", "ticker": "AAPL", "year": 2023, "query_terms": ["services"]}],
+    "required_answer_terms": ["services", "revenue"]
+  },
+  {
+    "case_id": "tsla_2024_margin_comment",
+    "category": "simple",
+    "question": "Find one Tesla 2024 gross margin or profitability comment and summarize the stated reason using only retrieved evidence.",
+    "expected_tickers": ["TSLA"],
+    "expected_years": [2024],
+    "expected_tool_calls": [{"tool_name": "search_transcript_tool", "ticker": "TSLA", "year": 2024, "query_terms": ["margin"]}],
+    "required_answer_terms": ["margin"]
+  },
+  {
+    "case_id": "nvda_2024_data_center",
+    "category": "simple",
+    "question": "Find one Nvidia 2024 data center demand comment and summarize it using only retrieved evidence.",
+    "expected_tickers": ["NVDA"],
+    "expected_years": [2024],
+    "expected_tool_calls": [{"tool_name": "search_transcript_tool", "ticker": "NVDA", "year": 2024, "query_terms": ["data"]}],
+    "required_answer_terms": ["data", "center"]
+  },
+  {
+    "case_id": "msft_2024_cloud",
+    "category": "simple",
+    "question": "Find one Microsoft 2024 cloud or Azure comment and summarize it using only retrieved evidence.",
+    "expected_tickers": ["MSFT"],
+    "expected_years": [2024],
+    "expected_tool_calls": [{"tool_name": "search_transcript_tool", "ticker": "MSFT", "year": 2024, "query_terms": ["cloud"]}],
+    "required_answer_terms": ["cloud"]
+  },
+  {
+    "case_id": "amzn_2023_aws",
+    "category": "simple",
+    "question": "Find one Amazon 2023 AWS comment and summarize it using only retrieved evidence.",
+    "expected_tickers": ["AMZN"],
+    "expected_years": [2023],
+    "expected_tool_calls": [{"tool_name": "search_transcript_tool", "ticker": "AMZN", "year": 2023, "query_terms": ["aws"]}],
+    "required_answer_terms": ["aws"]
+  },
+  {
+    "case_id": "meta_2024_advertising",
+    "category": "simple",
+    "question": "Find one Meta 2024 advertising revenue or ad demand comment and summarize it using only retrieved evidence.",
+    "expected_tickers": ["META"],
+    "expected_years": [2024],
+    "expected_tool_calls": [{"tool_name": "search_transcript_tool", "ticker": "META", "year": 2024, "query_terms": ["advertising"]}],
+    "required_answer_terms": ["advertising"]
+  },
+  {
+    "case_id": "aapl_services_2023_vs_2024",
+    "category": "multi_hop",
+    "question": "Compare Apple services revenue commentary in 2023 and 2024. Use retrieved evidence for both years.",
+    "expected_tickers": ["AAPL"],
+    "expected_years": [2023, 2024],
+    "expected_tool_calls": [
+      {"tool_name": "search_transcript_tool", "ticker": "AAPL", "year": 2023, "query_terms": ["services"]},
+      {"tool_name": "search_transcript_tool", "ticker": "AAPL", "year": 2024, "query_terms": ["services"]}
+    ],
+    "required_answer_terms": ["services", "revenue"]
+  },
+  {
+    "case_id": "tsla_margin_2023_vs_2024",
+    "category": "multi_hop",
+    "question": "Compare Tesla gross margin or profitability commentary in 2023 and 2024. Use retrieved evidence for both years.",
+    "expected_tickers": ["TSLA"],
+    "expected_years": [2023, 2024],
+    "expected_tool_calls": [
+      {"tool_name": "search_transcript_tool", "ticker": "TSLA", "year": 2023, "query_terms": ["margin"]},
+      {"tool_name": "search_transcript_tool", "ticker": "TSLA", "year": 2024, "query_terms": ["margin"]}
+    ],
+    "required_answer_terms": ["margin"]
+  },
+  {
+    "case_id": "msft_cloud_vs_amzn_aws_2023",
+    "category": "comparison",
+    "question": "Compare Microsoft cloud commentary with Amazon AWS commentary in 2023. Use retrieved evidence from both companies.",
+    "expected_tickers": ["MSFT", "AMZN"],
+    "expected_years": [2023],
+    "expected_tool_calls": [
+      {"tool_name": "search_transcript_tool", "ticker": "MSFT", "year": 2023, "query_terms": ["cloud"]},
+      {"tool_name": "search_transcript_tool", "ticker": "AMZN", "year": 2023, "query_terms": ["aws"]}
+    ],
+    "required_answer_terms": ["cloud", "aws"]
+  },
+  {
+    "case_id": "googl_ads_vs_meta_ads_2024",
+    "category": "comparison",
+    "question": "Compare Alphabet advertising commentary with Meta advertising commentary in 2024. Use retrieved evidence from both companies.",
+    "expected_tickers": ["GOOGL", "META"],
+    "expected_years": [2024],
+    "expected_tool_calls": [
+      {"tool_name": "search_transcript_tool", "ticker": "GOOGL", "year": 2024, "query_terms": ["advertising"]},
+      {"tool_name": "search_transcript_tool", "ticker": "META", "year": 2024, "query_terms": ["advertising"]}
+    ],
+    "required_answer_terms": ["advertising"]
+  }
+]
