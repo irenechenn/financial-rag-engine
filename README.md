@@ -122,6 +122,8 @@ Evaluation cases live in:
 eval_cases/day3_agentic_smoke.json
 ```
 
+The current evaluation set is a curated 10-case smoke benchmark: 6 simple retrieval cases, 2 multi-hop cases, and 2 comparison cases.
+
 The evaluation harness tracks runtime errors, guardrail pass rate, expected metadata hits, expected tool calls, required terms, loop counts, correction attempts, and latency.
 
 The current evaluation pipeline does not report classic `Precision@3` as a named metric. Instead, it uses Agentic RAG-specific checks:
